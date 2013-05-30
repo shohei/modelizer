@@ -1,0 +1,62 @@
+{% extends "base.html"%}
+
+{% block title %}
+<h1>carpenter</h1>
+<hr />
+<h3>{{ port }} was successfully opened.</h3>
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="POST">
+<b>Mill</b>
+<input type="file" name="millfile">
+<b>Drill</b>
+<input type="file" name="drillfile">
+<b>Dimension</b>
+<input type="file" name="dimensionfile">
+<input type="submit" value="preview" class="btn btn-primary btn-medium">
+</form>
+
+{% endblock %}
+
+{% block preview %}
+{{ mill }}
+{{ drill }}
+{{ dimension }}
+{% endblock %}
+
+
+
+
+
+
+
+{% block reference %}
+<table class="table">
+<caption>STANDARD PARAMETER</caption>
+<thead>
+<th>CUTTING TYPE</th>
+<th>X-Y SPEED</th>
+<th>Z DEPTH</th>
+</thead>
+<tr>
+ <td>milling</td>
+ <td>1</td>
+ <td>-20</td>
+</tr>
+<tr>
+ <td>drilling</td>
+ <td>1</td>
+ <td>-90</td>
+</tr>
+<tr>
+ <td>dimension</td>
+ <td>1</td>
+ <td>-30,-60,-90(3 round)</td>
+</tr>
+</table>
+
+{% endblock %}
+
+

@@ -1,0 +1,12 @@
+from django.db import models
+
+# Create your models here.
+
+class Camfile(models.Model):
+    milData = Camfile.TextField()
+    drlData = Camfile.TextField()
+    dimData = Camfile.TextField()
+    
+    
+
+

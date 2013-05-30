@@ -1,0 +1,28 @@
+# Create your views here.
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+import serial
+from control.models import Camfile
+
+
+def index(request):
+    port = serialOpen
+    if request.POST:
+        mil = request.POST['milData']
+        drl = request.POST['drlData']
+        dim = request.POST['dimData']
+        newCam = Camfile.create()
+        newCam.milData = mil
+        newCam.drlData = drl
+        newCam.dimData = dim
+        newCam.save()
+        return render_to_response('control/index.html',{'port':port,'mil':mil,'drl':drl,'dim':dim},context_instance=RequestContext(request))
+    else:
+        return render_to_response('control/index.html',{'port':port},context_instance=RequestContext(request))
+
+
+
+def serialOpen():
+    com = serial.Serial(port=3,baudrate=9600,bytesize=8,parity='N',stopbits=1,timeout=None,xonxoff=0,rtscts=0,writeTimeout=None,dsrdtr=None)
+    return com.portstr
+
