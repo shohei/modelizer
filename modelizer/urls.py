@@ -15,7 +15,10 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     url(r'^$','control.views.index'),
-    url(r'^milUpload$','control.views.milUpload'),                        url(r'^hello/$','control.views.hellotest'),                       
+    url(r'^milUpload$','control.views.milUpload'),                      
+    url(r'^hello/$','control.views.hellotest'),                       
     url(r'^startMilling$','control.views.startMilling'),             
+    url(r'up','control.views.up'),
+    url(r'laser','control.views.laser'),
 
 )

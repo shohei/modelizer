@@ -66,3 +66,14 @@ def driveModela(rmlData):
     print(com.portstr)
     com.write(rmlData)
     com.close()
+
+def up(request):
+    #print "up"
+    #return HttpResponse("Hello, UP!")
+    #port = "COM4"
+    port = "UP! Driver"
+    return render_to_response('control/up.html',{'port':port},context_instance=RequestContext(request))
+
+def laser(request):
+    print "laser"
+    return HttpResponse("Hello, Laser!")
