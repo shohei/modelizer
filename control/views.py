@@ -9,7 +9,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 def index(request):
-    port = serialOpen
+    #port = serialOpen
+    port = "COM3"
     if request.POST:
         mil = request.POST['milData']
         drl = request.POST['drlData']
