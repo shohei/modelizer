@@ -73,7 +73,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "C:/Users/kosaku/Documents/aoki/django/modelizer/static/",
+    #"C:/Users/kosaku/Documents/aoki/django/modelizer/static/",
+    "/Users/shohei/Dropbox/Codes/django/modelizer/static/",
 )
 
 # List of finder classes that know how to find static files in
@@ -97,7 +98,7 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    #]'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
@@ -114,6 +115,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     "C:/Users/kosaku/Documents/aoki/django/modelizer/templates/",
+    /Users/shohei/Downloads/530494_691194270905464_91570892_n.jpg /Users/shohei/Downloads/578126_691194337572124_282630833_n.jpg /Users/shohei/Downloads/579183_691194207572137_54915817_n.jpg /Users/shohei/Downloads/988373_691194387572119_1376978399_n.jpg /Users/shohei/Downloads/996641_691194237572134_619533177_n.jpg /Users/shohei/Downloads/1394355_691194430905448_119429333_n.jpg /Users/shohei/Downloads/1422467_691193974238827_1693425189_n.jpg /Users/shohei/Downloads/1424522_691194324238792_1990495188_n.jpg /Users/shohei/Downloads/1424551_691194140905477_1908392873_n.jpg /Users/shohei/Downloads/1450729_691194517572106_1963621419_n.jpg /Users/shohei/Downloads/1454573_691194580905433_1423390917_n.jpg /Users/shohei/Downloads/1456751_691193990905492_1536204124_n.jpg /Users/shohei/Downloads/1459289_691193890905502_1343581815_n.jpg /Users/shohei/Downloads/1460056_691194537572104_1740748717_n.jpg /Users/shohei/Downloads/1462854_691194174238807_992188078_n.jpg /Users/shohei/Downloads/1465208_691193914238833_660546002_n.jpg /Users/shohei/Downloads/1465395_691194000905491_1026847746_n.jpg /Users/shohei/Downloads/1470061_691194630905428_178507785_n.jpg /Users/shohei/Downloads/1470388_691194697572088_1495600100_n.jpg /Users/shohei/Downloads/1475998_691194414238783_1796826042_n.jpg /Users/shohei/Downloads/1477444_691193870905504_938268953_n.jpg /Users/shohei/Downloads/1477444_691194727572085_257397804_n.jpg /Users/shohei/Downloads/1480668_691194314238793_1171070861_n.jpg /Users/shohei/Downloads/7223656036_122b82f291.jpg /Users/shohei/Downloads/a35ed0bc77a3ebbfafcbbfcfb64e623a_large.jpg 
 )
 
 INSTALLED_APPS = (

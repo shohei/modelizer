@@ -73,7 +73,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "C:/Users/kosaku/Documents/aoki/django/modelizer/static/",
+    #"C:/Users/kosaku/Documents/aoki/django/modelizer/static/",
+    "/Users/shohei/Dropbox/Codes/django/modelizer/static/",
 )
 
 # List of finder classes that know how to find static files in
@@ -113,7 +114,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "C:/Users/kosaku/Documents/aoki/django/modelizer/templates/",
+    #"C:/Users/kosaku/Documents/aoki/django/modelizer/templates/",
+    "/Users/shohei/Dropbox/Codes/django/modelizer/templates/",
 )
 
 INSTALLED_APPS = (

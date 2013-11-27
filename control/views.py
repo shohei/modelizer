@@ -10,6 +10,8 @@ logger = logging.getLogger(__name__)
 
 def index(request):
     port = serialOpen
+    if(port == ""):
+        port = "No PORT"
     if request.POST:
         mil = request.POST['milData']
         drl = request.POST['drlData']
@@ -22,7 +24,7 @@ def index(request):
 
 
 def serialOpen():
-    com = serial.Serial(port=2,baudrate=9600,bytesize=8,parity='N',stopbits=1,timeout=None,xonxoff=0,rtscts=True,writeTimeout=None,dsrdtr=True)
+    com = serial.Serial(port="/dev/tty.Bluetooth-Incoming-Port",baudrate=9600,bytesize=8,parity='N',stopbits=1,timeout=None,xonxoff=0,rtscts=True,writeTimeout=None,dsrdtr=True)
     return com.portstr
 
 def hellotest(request):
